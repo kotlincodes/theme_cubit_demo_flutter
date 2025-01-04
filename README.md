@@ -1,16 +1,55 @@
-# theme_cubit_demo
+# Flutter Theme Management with Cubit
 
-A new Flutter project.
+This repository demonstrates how to implement dynamic theme switching in a Flutter application using **Cubit** for state management.
+
+## Blog Post
+For the full step-by-step guide, check out the accompanying blog post:
+
+[Implementing Themes in Flutter with Cubit: Best Practices](https://kotlincodes.com/flutter-dart/implementing-themes-in-flutter-with-cubit/)
+
+## Features
+- Light and dark theme support
+- Dynamic theme switching with a single button press
+- Scalable and maintainable state management using Cubit
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/kotlincodes/theme_cubit_demo_flutter
+   cd flutter-theme-cubit-demo
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+2. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Run the app:
+   ```bash
+   flutter run
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+```plaintext
+lib/
+  |- cubit/
+      |- theme_cubit.dart  // Handles theme switching logic
+      |- theme_state.dart  // Defines theme states (light and dark)
+  |- main.dart              // Application entry point
+```
+
+## How It Works
+- **Cubit** is used to manage the app's theme state.
+- Users can toggle between light and dark themes by pressing a button.
+- The UI automatically updates based on the current theme.
+
+## Requirements
+- Flutter SDK
+- Dart
+
+## Contributing
+Feel free to submit issues or pull requests to improve this project. Contributions are always welcome!
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
